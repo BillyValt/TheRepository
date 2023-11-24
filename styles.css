@@ -13,9 +13,12 @@
   font-family: Roboto, sans-serif, Arial, Helvetica;
   width: 100svw;
   height: 150svh;
-  min-width: none;
+  min-width: 400px;
+  max-width: 100%;
   position: relative;
   user-select: none;
+  padding: 0 20px 0 20px;
+  box-sizing: border-box;
 }
 
 .header {
