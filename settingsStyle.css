@@ -1,0 +1,28 @@
+.demo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.checkbox-settings {
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
+  accent-color: rgb(135, 124, 255);
+  
+}
+
+.saved_notification {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 170px;
+  height: 40px;
+  background-color: rgba(212, 212, 212, 0.7);
+  top: -40px;
+  font-size: 22px;
+  border-radius: 10px;
+  visibility: hidden;
+}
