@@ -65,7 +65,7 @@ function pickPrize() {
     ` : `
       <div class="winner__incription">Подарок:</div>
         <div class="container__element">
-        <img class="container__img" id="img-id-0" src="images/randomPrize4.png">
+        <img class="container__img" id="img-id-0" src="images/randomPrize6.png">
       </div>
   ` ;
   }, 2100);
