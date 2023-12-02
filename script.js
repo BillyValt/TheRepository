@@ -1,4 +1,4 @@
-import { participants } from './dataParticipants.js';
+import { participants, chosenWinner } from './dataParticipants.js';
 // import { checkboxStatement } from './settingsScript.js';
 
 const startButton = document.querySelector('.js-start__btn');
@@ -11,6 +11,9 @@ const resultImage = document.querySelector('.container__img');
 let savedDemoIsOn = JSON.parse(localStorage.getItem('setting'));
 
 let winner;
+let wishWinner = chosenWinner[0].personName;
+
+console.log(wishWinner);
 
 console.log(savedDemoIsOn);
 
@@ -43,7 +46,7 @@ function pickWinner() {
   setTimeout(() => {
     clearInterval(intervalId1);
 
-    winner = participants[randomPerson].personName;
+    winner = savedDemoIsOn ? participants[randomPerson].personName : wishWinner;
 
     winnerContainerEl.style.backgroundColor = 'rgb(170, 255, 0)';
     winnerNameEl.innerHTML = `${winner}`;
@@ -65,7 +68,7 @@ function pickPrize() {
     ` : `
       <div class="winner__incription">Подарок:</div>
         <div class="container__element">
-        <img class="container__img" id="img-id-0" src="images/randomPrize6.png">
+        <img class="container__img" id="img-id-0" src="images/randomPrize4.png">
       </div>
   ` ;
   }, 2100);
