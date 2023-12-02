@@ -35,3 +35,9 @@ export const participants = [{
   personName: 'Мамулян Милена',
   id: '12'
 },];
+
+//==== chosenWinner ====
+export const chosenWinner = [{
+  personName: 'Соколова Валерия',
+  id: '6'
+}];
